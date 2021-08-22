@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100vh;
+}
+li{
+    list-style: none;
+}
+body{
+    background: radial-gradient(200% 100% at bottom center, #f7f7b6, #e96f92, #1b2947);
+    background: radial-gradient(220% 105% at top center, #1b2947 10%, #75517d 40%, #e96f92 65%, #f7f7b6);
+    background-attachment: fixed;
+    overflow: hidden;
+    #app{
+        height: 100%;
+        overflow: hidden;
+        perspective: 800px;
+        ul{
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: translateZ(-1600px);
+            z-index: 1;
+            li{
+                top: -80px;
+                left: -60px;
+                width: 120px;
+                height: 160px;
+                font-size: 28px;
+                position: absolute;
+                text-align: center;
+                line-height: 160px;
+                background-color: rgba(5,100,80,0.2);
+                border: 1px solid rgba(125,255,255,0.25);
+                box-shadow: 0 0 15px rgba(0,255,255,0.5);
+                cursor: pointer;
+                span{
+                    font-size: 28px;
+                    font-weight: blod;
+                    text-shadow: 2px 2px 5px black;
+                    color: #efebef;
+                }
+            }
+        }
+        .mask{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background: rgba(255,255,255,.2);
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "presets": ["stage-3"]
+  // "plugins": [["import", {
+  //   "libraryName": "view-design",
+  //   "libraryDirectory": "src/components"
+  // }]]
+}
